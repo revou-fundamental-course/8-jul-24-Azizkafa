@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>BMI Calculator</h1>
+            <form id="bmi-form">
+                <div class="input-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" required>
+                </div>
+                <div class="input-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" required>
+                </div>
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" required>
+                </div>
+                <button type="submit">Calculate BMI</button>
+            </form>
+        </div>
+        <div id="bmi-explanation">
+            <h2>What is BMI?</h2>
+            <p>BMI (Body Mass Index) is a measure that uses your height and weight to work out if your weight is healthy. The BMI calculation divides an adult's weight in kilograms by their height in meters squared.</p>
+            <h2>Keunggulan fitur</h2>
+            <ul>
+                <p>1. Menghitung berat badan</p>
+                <p>2. Menentukan kategori berat badan ideal atau tidak</p>
+                <p>3. mempersiakan program penurunan berat badan</p>
+            </ul>
+        </div>
+        <div id="bmi-result" class="hidden result-container">
+            <h1>BMI Result</h1>
+            <p id="result-text"></p>
+            <div id="bmi-suggestion">
+                <h2>Explanation and Suggestions</h2>
+                <p id="suggestion-text"></p>
+            </div>
+        <section id="kategori"> 
+            <div class="kategori-container">
+                <h1>BMI Categories:</h1>
+                <ul>
+                    <li><strong>Underweight:</strong> BMI less than 18.5</li>
+                    <li><strong>Normal weight:</strong> BMI between 18.5 and 24.9</li>
+                    <li><strong>Overweight:</strong> BMI between 25 and 29.9</li>
+                    <li><strong>Obesity:</strong> BMI 30 or greater</li>
+                </ul>
+            </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
